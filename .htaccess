@@ -1,0 +1,188 @@
+# Turn rewrite engine on
+Options +FollowSymlinks
+RewriteEngine on
+
+RewriteRule ^api/product/isshopopen/$   RestController.php?page_key=isshopopen [L]
+RewriteRule ^api/product/isshopopen/$   RestController.php?page_key=isshopopen [nc,qsa]
+RewriteRule ^api/product/isshopopen   RestController.php?page_key=isshopopen [nc,qsa]
+RewriteRule ^api/product/isshopopen$   api/product/isshopopen/ [L,R=301]
+
+RewriteRule ^api/product/allData/$   RestController.php?page_key=allData [L]
+RewriteRule ^api/product/allData/$   RestController.php?page_key=allData [nc,qsa]
+RewriteRule ^api/product/allData   RestController.php?page_key=allData [nc,qsa]
+RewriteRule ^api/product/allData$   api/product/allData/ [L,R=301]
+
+RewriteRule ^api/product/allCategory/$   RestController.php?page_key=allCategory [L]
+RewriteRule ^api/product/allCategory/$   RestController.php?page_key=allCategory [nc,qsa]
+RewriteRule ^api/product/allCategory   RestController.php?page_key=allCategory [nc,qsa]
+RewriteRule ^api/product/allCategory$   api/product/allCategory/ [L,R=301]
+
+RewriteRule ^api/product/subCategoryById/$   RestController.php?page_key=subCategoryById [L]
+RewriteRule ^api/product/subCategoryById/$   RestController.php?page_key=subCategoryById [nc,qsa]
+RewriteRule ^api/product/subCategoryById   RestController.php?page_key=subCategoryById [nc,qsa]
+RewriteRule ^api/product/subCategoryById$   api/product/subCategoryById/ [L,R=301]
+
+RewriteRule ^api/product/categorybydata/$   RestController.php?page_key=categorybydata [L]
+RewriteRule ^api/product/categorybydata/$   RestController.php?page_key=categorybydata [nc,qsa]
+RewriteRule ^api/product/categorybydata   RestController.php?page_key=categorybydata [nc,qsa]
+RewriteRule ^api/product/categorybydata$   api/product/categorybydata/ [L,R=301]
+
+RewriteRule ^api/product/getstoreinfo/$   RestController.php?page_key=getstoreinfo [L]
+RewriteRule ^api/product/categorybydata/$   RestController.php?page_key=getstoreinfo [nc,qsa]
+RewriteRule ^api/product/getstoreinfo   RestController.php?page_key=getstoreinfo [nc,qsa]
+RewriteRule ^api/product/getstoreinfo$   api/product/getstoreinfo/ [L,R=301]
+
+RewriteRule ^api/product/productBySubCatId/$   RestController.php?page_key=productBySubCatId [L]
+RewriteRule ^api/product/productBySubCatId/$   RestController.php?page_key=productBySubCatId [nc,qsa]
+RewriteRule ^api/product/productBySubCatId   RestController.php?page_key=productBySubCatId [nc,qsa]
+RewriteRule ^api/product/productBySubCatId$   api/product/productBySubCatId/ [L,R=301]
+
+RewriteRule ^api/order/addtocart/$   RestController.php?page_key=addtocart [L]
+RewriteRule ^api/order/addtocart/$   RestController.php?page_key=addtocart [nc,qsa]
+RewriteRule ^api/order/addtocart   RestController.php?page_key=addtocart [nc,qsa]
+RewriteRule ^api/order/addtocart$   api/order/addtocart/ [L,R=301]
+
+RewriteRule ^api/order/removefromcart/$   RestController.php?page_key=removefromcart [L]
+RewriteRule ^api/order/removefromcart/$   RestController.php?page_key=removefromcart [nc,qsa]
+RewriteRule ^api/order/removefromcart   RestController.php?page_key=removefromcart [nc,qsa]
+RewriteRule ^api/order/removefromcart$   api/order/removefromcart/ [L,R=301]
+
+RewriteRule ^api/order/cartdata/$   RestController.php?page_key=cartdata [L]
+RewriteRule ^api/order/cartdata/$   RestController.php?page_key=cartdata [nc,qsa]
+RewriteRule ^api/order/cartdata   RestController.php?page_key=cartdata [nc,qsa]
+RewriteRule ^api/order/cartdata$   api/order/cartdata/ [L,R=301]
+
+RewriteRule ^api/order/place/$   RestController.php?page_key=place [L]
+RewriteRule ^api/order/place/$   RestController.php?page_key=place [nc,qsa]
+RewriteRule ^api/order/place   RestController.php?page_key=place [nc,qsa]
+RewriteRule ^api/order/place$   api/order/place/ [L,R=301]
+
+RewriteRule ^api/order/listorder/$   RestController.php?page_key=listorder [L]
+RewriteRule ^api/order/listorder/$   RestController.php?page_key=listorder [nc,qsa]
+RewriteRule ^api/order/listorder   RestController.php?page_key=listorder [nc,qsa]
+RewriteRule ^api/order/listorder$   api/order/listorder/ [L,R=301]
+
+RewriteRule ^api/order/listproductbyorderid/$   RestController.php?page_key=listproductbyorderid [L]
+RewriteRule ^api/order/listproductbyorderid/$   RestController.php?page_key=listproductbyorderid [nc,qsa]
+RewriteRule ^api/order/listproductbyorderid   RestController.php?page_key=listproductbyorderid [nc,qsa]
+RewriteRule ^api/order/listproductbyorderid$   api/order/listproductbyorderid/ [L,R=301]
+
+RewriteRule ^api/user/register/$   RestController.php?page_key=register [L]
+RewriteRule ^api/user/register/$   RestController.php?page_key=register [nc,qsa]
+RewriteRule ^api/user/register   RestController.php?page_key=register [nc,qsa]
+RewriteRule ^api/user/register$   api/user/register/ [L,R=301]
+
+RewriteRule ^api/user/login/$   RestController.php?page_key=login [L]
+RewriteRule ^api/user/login/$   RestController.php?page_key=login [nc,qsa]
+RewriteRule ^api/user/login   RestController.php?page_key=login [nc,qsa]
+RewriteRule ^api/user/login$   api/user/login/ [L,R=301]
+
+RewriteRule ^api/user/forgotpasword/$   RestController.php?page_key=forgotpasword [L]
+RewriteRule ^api/user/forgotpasword/$   RestController.php?page_key=forgotpasword [nc,qsa]
+RewriteRule ^api/user/forgotpasword   RestController.php?page_key=forgotpasword [nc,qsa]
+RewriteRule ^api/user/forgotpasword$   api/user/forgotpasword/ [L,R=301]
+
+RewriteRule ^api/user/resetpassword/$   RestController.php?page_key=resetpassword [L]
+RewriteRule ^api/user/resetpassword/$   RestController.php?page_key=resetpassword [nc,qsa]
+RewriteRule ^api/user/resetpassword   RestController.php?page_key=resetpassword [nc,qsa]
+RewriteRule ^api/user/resetpassword$   api/user/resetpassword/ [L,R=301]
+
+RewriteRule ^api/user/userupdate/$   RestController.php?page_key=userupdate [L]
+RewriteRule ^api/user/userupdate/$   RestController.php?page_key=userupdate [nc,qsa]
+RewriteRule ^api/user/userupdate   RestController.php?page_key=userupdate [nc,qsa]
+RewriteRule ^api/user/userupdate$   api/user/userupdate/ [L,R=301]
+
+RewriteRule ^api/user/updatefcm/$   RestController.php?page_key=updatefcm [L]
+RewriteRule ^api/user/updatefcm/$   RestController.php?page_key=updatefcm [nc,qsa]
+RewriteRule ^api/user/updatefcm   RestController.php?page_key=updatefcm [nc,qsa]
+RewriteRule ^api/user/updatefcm$   api/user/updatefcm/ [L,R=301]
+
+RewriteRule ^api/vendor/vupdatefcm/$   RestController.php?page_key=vupdatefcm [L]
+RewriteRule ^api/vendor/vupdatefcm/$   RestController.php?page_key=vupdatefcm [nc,qsa]
+RewriteRule ^api/vendor/vupdatefcm   RestController.php?page_key=vupdatefcm [nc,qsa]
+RewriteRule ^api/vendor/vupdatefcm$   api/user/vupdatefcm/ [L,R=301]
+
+RewriteRule ^api/product/search/$   RestController.php?page_key=search [L]
+RewriteRule ^api/product/search/$   RestController.php?page_key=search [nc,qsa]
+RewriteRule ^api/product/search   RestController.php?page_key=search [nc,qsa]
+RewriteRule ^api/product/search$   api/product/search/ [L,R=301]
+
+RewriteRule ^api/vendor/vendor_login/$   RestController.php?page_key=vendor_login [L]
+RewriteRule ^api/vendor/vendor_login/$   RestController.php?page_key=vendor_login [nc,qsa]
+RewriteRule ^api/vendor/vendor_login   RestController.php?page_key=vendor_login [nc,qsa]
+RewriteRule ^api/vendor/vendor_login$   api/vendor/vendor_login/ [L,R=301]
+
+RewriteRule ^api/vendor/vendororderdata/$   RestController.php?page_key=vendororderdata [L]
+RewriteRule ^api/vendor/vendororderdata/$   RestController.php?page_key=vendororderdata [nc,qsa]
+RewriteRule ^api/vendor/vendororderdata   RestController.php?page_key=vendororderdata [nc,qsa]
+RewriteRule ^api/vendor/vendororderdata$   api/vendor/vendororderdata/ [L,R=301]
+
+RewriteRule ^api/vendor/vendororderdetails/$   RestController.php?page_key=vendororderdetails [L]
+RewriteRule ^api/vendor/vendororderdetails/$   RestController.php?page_key=vendororderdetails [nc,qsa]
+RewriteRule ^api/vendor/vendororderdetails   RestController.php?page_key=vendororderdetails [nc,qsa]
+RewriteRule ^api/vendor/vendororderdetails$   api/vendor/vendororderdetails/ [L,R=301]
+
+RewriteRule ^api/vendor/vendorapprove/$   RestController.php?page_key=vendorapprove [L]
+RewriteRule ^api/vendor/vendorapprove/$   RestController.php?page_key=vendorapprove [nc,qsa]
+RewriteRule ^api/vendor/vendorapprove   RestController.php?page_key=vendorapprove [nc,qsa]
+RewriteRule ^api/vendor/vendorapprove$   api/vendor/vendorapprove/ [L,R=301]
+
+RewriteRule ^api/vendor/vendorremovecart/$   RestController.php?page_key=vendorremovecart [L]
+RewriteRule ^api/vendor/vendorremovecart/$   RestController.php?page_key=vendorremovecart [nc,qsa]
+RewriteRule ^api/vendor/vendorremovecart   RestController.php?page_key=vendorremovecart [nc,qsa]
+RewriteRule ^api/vendor/vendorremovecart$   api/vendor/vendorremovecart/ [L,R=301]
+
+RewriteRule ^api/vendor/vendordispatch/$   RestController.php?page_key=vendordispatch [L]
+RewriteRule ^api/vendor/vendordispatch/$   RestController.php?page_key=vendordispatch [nc,qsa]
+RewriteRule ^api/vendor/vendordispatch   RestController.php?page_key=vendordispatch [nc,qsa]
+RewriteRule ^api/vendor/vendordispatch$   api/vendor/vendordispatch/ [L,R=301]
+
+RewriteRule ^api/vendor/vendordelivery/$   RestController.php?page_key=vendordelivery [L]
+RewriteRule ^api/vendor/vendordelivery/$   RestController.php?page_key=vendordelivery [nc,qsa]
+RewriteRule ^api/vendor/vendordelivery   RestController.php?page_key=vendordelivery [nc,qsa]
+RewriteRule ^api/vendor/vendordelivery$   api/vendor/vendordelivery/ [L,R=301]
+
+RewriteRule ^api/vendor/vendordecline/$   RestController.php?page_key=vendordecline [L]
+RewriteRule ^api/vendor/vendordecline/$   RestController.php?page_key=vendordecline [nc,qsa]
+RewriteRule ^api/vendor/vendordecline   RestController.php?page_key=vendordecline [nc,qsa]
+RewriteRule ^api/vendor/vendordecline$   api/vendor/vendordecline/ [L,R=301]
+
+RewriteRule ^api/vendor/shopopen/$   RestController.php?page_key=shopopen [L]
+RewriteRule ^api/vendor/shopopen/$   RestController.php?page_key=shopopen [nc,qsa]
+RewriteRule ^api/vendor/shopopen   RestController.php?page_key=shopopen [nc,qsa]
+RewriteRule ^api/vendor/shopopen$   api/vendor/shopopen/ [L,R=301]
+
+RewriteRule ^api/vendor/vendordatadetails/$   RestController.php?page_key=vendordatadetails [L]
+RewriteRule ^api/vendor/vendordatadetails/$   RestController.php?page_key=vendordatadetails [nc,qsa]
+RewriteRule ^api/vendor/vendordatadetails   RestController.php?page_key=vendordatadetails [nc,qsa]
+RewriteRule ^api/vendor/vendordatadetails$   api/vendor/vendordatadetails/ [L,R=301]
+
+RewriteRule ^api/vendor/vendorupdate/$   RestController.php?page_key=vendorupdate [L]
+RewriteRule ^api/vendor/vendorupdate/$   RestController.php?page_key=vendorupdate [nc,qsa]
+RewriteRule ^api/vendor/vendorupdate   RestController.php?page_key=vendorupdate [nc,qsa]
+RewriteRule ^api/vendor/vendorupdate$   api/vendor/vendorupdate/ [L,R=301]
+
+RewriteRule ^api/vendor/addproduct/$   RestController.php?page_key=addproduct [L]
+RewriteRule ^api/vendor/addproduct/$   RestController.php?page_key=addproduct [nc,qsa]
+RewriteRule ^api/vendor/addproduct   RestController.php?page_key=addproduct [nc,qsa]
+RewriteRule ^api/vendor/addproduct$   api/vendor/addproduct/ [L,R=301]
+
+RewriteRule ^api/vendor/logout/$   RestController.php?page_key=logout [L]
+RewriteRule ^api/vendor/logout/$   RestController.php?page_key=logout [nc,qsa]
+RewriteRule ^api/vendor/logout   RestController.php?page_key=logout [nc,qsa]
+RewriteRule ^api/vendor/logout$   api/vendor/logout/ [L,R=301]
+
+RewriteRule ^api/vendor/vendorproductupdate/$   RestController.php?page_key=vendorproductupdate [L]
+RewriteRule ^api/vendor/vendorproductupdate/$   RestController.php?page_key=vendorproductupdate [nc,qsa]
+RewriteRule ^api/vendor/vendorproductupdate   RestController.php?page_key=vendorproductupdate [nc,qsa]
+RewriteRule ^api/vendor/vendorproductupdate$   api/vendor/vendorproductupdate/ [L,R=301]
+
+RewriteRule ^api/vendor/vendorstatus/$   RestController.php?page_key=vendorstatus [L]
+RewriteRule ^api/vendor/vendorstatus/$   RestController.php?page_key=vendorstatus [nc,qsa]
+RewriteRule ^api/vendor/vendorstatus   RestController.php?page_key=vendorstatus [nc,qsa]
+RewriteRule ^api/vendor/vendorstatus$   api/vendor/vendorstatus/ [L,R=301]
+
+RewriteRule ^api/vendor/vendorpayment/$   RestController.php?page_key=vendorpayment [L]
+RewriteRule ^api/vendor/vendorpayment/$   RestController.php?page_key=vendorpayment [nc,qsa]
+RewriteRule ^api/vendor/vendorpayment   RestController.php?page_key=vendorpayment [nc,qsa]
+RewriteRule ^api/vendor/vendorpayment$   api/vendor/vendorpayment/ [L,R=301]
